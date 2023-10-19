@@ -44,7 +44,7 @@ const PostForm = () => {
       <form ref={form} onSubmit={e =>handleForm(e)}>
         <input type="text" placeholder="Titre de l'article" />
         <input type="file" accept="image/*" onChange={(e) => handleImageChange(e)} />
-        {imageURL && ( <img className="affichageImg" src={imageURL} alt="Image sélectionnée" />)}
+        {imageURL && ( <img className="affichageImg" src={imageURL} alt="Sélectionnée" />)}
         <textarea placeholder="Description de l'article"></textarea>
         <input
           type="text"
@@ -53,8 +53,8 @@ const PostForm = () => {
           onChange={(e) => setCategoriesInput(e.target.value)}
         />
         <textarea placeholder="Prix de base"></textarea>
-        <input placeholder="Prix Soldé"></input>
-        <input className="valideForm"type="submit" value="Envoyer"/>
+        <input type="text" placeholder="Prix Soldé"></input>
+        <input type="submit" className="valideForm" value="Envoyer"/>
       </form>
     </div>
   );
