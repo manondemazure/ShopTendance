@@ -1,0 +1,44 @@
+.form-container {
+  border: 1px solid $color-2;
+  margin: 20px 0 10px;
+  width: 50%;
+  background: $color-1;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+
+    input,
+    textarea {
+      border: 1px solid $color-4;
+      font-family: "Amiri", serif;
+      padding: 5px 10px;
+      resize: none;
+    }
+
+    input,
+    textarea,
+    img {
+      margin-bottom: 6px;
+    }
+    textarea {
+      height: 20px;
+    }
+
+    .valideForm {
+      background: rgb(253, 193, 253);
+      width: 80px;
+      color: $color-1;
+      margin-left: auto;
+      letter-spacing: 1px;
+    }
+
+    .affichageImg {
+      width: 150px;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    width: 90%;
+  }
+}

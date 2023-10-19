@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri&display=swap");
+
+$color-1: #fff;
+$color-2: #292929;
+$color-3: #1a8917;
+$color-4: rgb(168, 168, 168);
+
+.post-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+body {
+  background: linear-gradient(to bottom, #c6e4ff, #d8f9fb);
+  color: $color-2;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Amiri", serif;
+}
+h1,
+h2 {
+  font-family: "IM Fell French Canon", serif;
+}
+
+h1 {
+  position: relative;
+  font-size: 3rem;
+  font-family: "IM Fell French Canon", serif;
+  margin-top: 20px;
+}
+
+.logo {
+  width: 200px;
+  position: relative;
+  left:-5%;
+}
