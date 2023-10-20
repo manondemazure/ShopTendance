@@ -24,7 +24,7 @@ ReactDOM.render(
           <Route path="/femme" element={<App/>}/>
           <Route path="/unisexe" element={<App/>}/>
           <Route path="/accessoire" element={<App/>}/>
-          <Route path="/chaussure" element={<App/>}/>
+          <Route path="/chaussures" element={<App/>}/>
         </Routes>
       </BrowserRouter>
     </Provider>,

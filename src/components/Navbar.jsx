@@ -22,11 +22,14 @@ const Navbar = () => {
         <li className='navbar_item slideInDown-2'>
           <a href="/femme" className='navbar_link'>Femme</a>
         </li>
-        <li className='navbar_item slideInDown-3'>
+		<li className='navbar_item slideInDown-3'>
+          <a href="/unisexe" className='navbar_link'>Unisexe</a>
+        </li>
+        <li className='navbar_item slideInDown-4'>
           <a href="/accessoire" className='navbar_link'>Accessoire</a>
         </li>
-		<li className='navbar_item slideInDown-4'>
-          <a href="/chaussure" className='navbar_link'>Chaussure</a>
+		<li className='navbar_item slideInDown-5'>
+          <a href="/chaussures" className='navbar_link'>Chaussures</a>
         </li>
       </ul>
       <button className='navbar_burger' onClick={handleShowLinks}>
