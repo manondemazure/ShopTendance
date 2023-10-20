@@ -3,8 +3,7 @@ import PostForm from './components/PostForm'
 import Post from './components/Post'
 import {isEmpty} from './components/Utils'
 import { useSelector } from 'react-redux';
-import logo from "./logo.png";
-import logo3 from './logo3.png';
+import Navbar from "./components/Navbar"
 
 const App = () => {
   const posts = useSelector((state) => state.postReducer);
@@ -12,7 +11,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <img className="logo" src={logo3} alt="logo"/>
+      <Navbar/>
       <PostForm/>
       <div className="content">
         <div className="post-container">
