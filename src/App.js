@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 
 
 const App = () => {
-  const posts = useSelector((state) => state.postReducer);
+ const posts = useSelector((state) => state.postReducer);
   const selectedCategory = useSelector((state) => state.selectedCategory);
  
   const filteredPosts = selectedCategory === 'all'
@@ -18,7 +18,6 @@ const App = () => {
     <div className="App">
       <Navbar/>
       <PostForm/>
-
       <div className="content">
         <div className="post-container">
         {!isEmpty(filteredPosts) && filteredPosts.map((post, index) => (

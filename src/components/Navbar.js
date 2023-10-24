@@ -8,7 +8,6 @@ import { setSelectedCategory } from '../actions/post.action';
 const categories = ['Homme', 'Femme', 'Unisexe', 'Accessoires', 'Chaussures'];
 
 const Navbar = () => {
-
 const [showLinks, setShowLinks] = useState(false);
 const dispatch = useDispatch();
 
@@ -20,19 +19,23 @@ const handleCategoryClick = (category) => {
 	dispatch(setSelectedCategory(category));
 }
 
+const handleLogoClick = () => {
+    dispatch(setSelectedCategory('all'));
+  };
+
 return (
 	<nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
 	<div className='navbar_logo'>
-	<Link to="/">
+	<Link to="/" onClick={handleLogoClick}>
 		<img className="LogoBar" src={Logo} alt="Logo" />
 	</Link>
 	</div>
 	<ul className='navbar_links'>
 		{categories.map((category, index) => (
 		<li key={index} className={`navbar_item slideInDown-${index + 1}`}>
-			<button onClick={() => handleCategoryClick(category)} className='navbar_link'>
-				{category}
-			</button>
+			<Link to={`/${category.toLowerCase()}`} className='navbar_link' onClick={() => handleCategoryClick(category)}>
+					{category}
+			</Link>
 		</li>
 		))}
 	</ul>
