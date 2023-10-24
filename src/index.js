@@ -19,12 +19,12 @@ ReactDOM.render(
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={ <App />}/>
-          <Route path="/homme" element={<App/>}/>
-          <Route path="/femme" element={<App/>}/>
-          <Route path="/unisexe" element={<App/>}/>
-          <Route path="/accessoire" element={<App/>}/>
-          <Route path="/chaussures" element={<App/>}/>
+          <Route path='/' element={ <App category="all"/>}/>
+          <Route path="/homme" element={<App category="Homme"/>}/>
+          <Route path="/femme" element={<App category="Femme"/>}/>
+          <Route path="/unisexe" element={<App category="Unisexe"/>}/>
+          <Route path="/accessoires" element={<App category="Accessoires"/>}/>
+          <Route path="/chaussures" element={<App category="Chaussures"/>}/>
         </Routes>
       </BrowserRouter>
     </Provider>,

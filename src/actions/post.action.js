@@ -4,6 +4,7 @@ export const GET_POST = 'GET_POST';
 export const ADD_POST = 'ADD_POST';
 export const EDIT_POST = 'EDIT_POST';
 export const DELETE_POST = 'DELETE_POST';
+export const SET_SELECTED_CATEGORY = 'SET_SELECTED_CATEGORY';
 
 export const getPost = () => {
 	return (dispatch) => {
@@ -36,3 +37,11 @@ export const deletePost = (postId) => {
 		});
 	};
 }
+
+export const setSelectedCategory = (category) => {
+	return {
+	  type: SET_SELECTED_CATEGORY,
+	  category,
+	};
+  };
+  

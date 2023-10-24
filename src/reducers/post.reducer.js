@@ -1,4 +1,4 @@
-import { ADD_POST, DELETE_POST, EDIT_POST, GET_POST } from '../actions/post.action';
+import { ADD_POST, DELETE_POST, EDIT_POST, GET_POST, SET_SELECTED_CATEGORY } from '../actions/post.action';
 
 const initialState = [];
 
@@ -27,3 +27,15 @@ export default function postReducer(state = initialState, action) {
 			return state;
 	}
 }
+
+
+const initialSelectedCategory = 'all';
+
+export function selectedCategoryReducer(state = initialSelectedCategory, action) {
+	switch (action.type) {
+	  case SET_SELECTED_CATEGORY:
+		return action.category;
+	  default:
+		return state;
+	}
+  }
