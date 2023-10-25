@@ -22,9 +22,9 @@ ReactDOM.render(
           <Route path='/' element={ <App category="all"/>}/>
           <Route path="/homme" element={<App category="Homme"/>}/>
           <Route path="/femme" element={<App category="Femme"/>}/>
-          <Route path="/unisexe" element={<App category="Unisexe"/>}/>
-          <Route path="/accessoires" element={<App category="Accessoires"/>}/>
-          <Route path="/chaussures" element={<App category="Chaussures"/>}/>
+          <Route path="/ados" element={<App category="Ados"/>}/>
+          <Route path="/enfants" element={<App category="Enfants"/>}/>
+          <Route path="/bébés" element={<App category="Bébés"/>}/>
         </Routes>
       </BrowserRouter>
     </Provider>,

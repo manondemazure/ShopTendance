@@ -5,7 +5,7 @@ import Logo from '../logo3.png'
 import { Link } from 'react-router-dom';
 import { setSelectedCategory } from '../actions/post.action';
 
-const categories = ['Homme', 'Femme', 'Unisexe', 'Accessoires', 'Chaussures'];
+const categories = ['Homme', 'Femme', 'Ados', 'Enfants', 'Bébés'];
 
 const Navbar = () => {
 const [showLinks, setShowLinks] = useState(false);

@@ -6,7 +6,7 @@ const Post = ({ post }) => {
 	const [editToggle, setEditToggle] = useState(false);
 	const [editedTitle, setEditedTitle] = useState(post.title);
 	const [editedDescription, setEditedDescription] = useState(post.description);
-	const [editedCategories, setEditedCategories] = useState(post.categories.join(' '));
+	const [editedCategories, setEditedCategories] = useState(post.categories);
 	const [editedBasePrice, setEditedBasePrice] = useState(post.basePrice);
 	const [editedSalePrice, setEditedSalePrice] = useState(post.salePrice);
 
@@ -15,7 +15,7 @@ const Post = ({ post }) => {
 	useEffect(() => {
 		setEditedTitle(post.title);
 		setEditedDescription(post.description);
-		setEditedCategories(post.categories.join(' '));
+		setEditedCategories(post.categories);
 		setEditedBasePrice(post.basePrice);
 		setEditedSalePrice(post.salePrice);
 	  }, [post]);
